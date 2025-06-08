@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "quiz_app_user",
+    "password": "CamTech2025123!@#",
+    "database": "camtech_quiz",
+    "host": "camtech-dev.online",
+    "dialect": "mysql"
+  },
+  "test": {
+     "username": "quiz_app_user",
+    "password": "CamTech2025123!@#",
+    "database": "camtech_quiz",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+     "username": "quiz_app_user",
+    "password": "CamTech2025123!@#",
+    "database": "camtech_quiz",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
