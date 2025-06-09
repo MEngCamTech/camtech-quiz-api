@@ -3,8 +3,8 @@ const db = require("../../models")
 const listQuestion = async (req, res, next)=>{
     const resp =  await db.Question.findAll();
 
-    
-    sleep(8000);
+  
+    await sleep(8000);
 
     return res.json(resp)
 }
