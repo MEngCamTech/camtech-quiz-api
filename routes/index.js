@@ -1,15 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var usersRouter = require('./users');
+var getHomepageController = require('../controllers/getHomePage');
 var questionsRouter = require('./questions');
+var categoryRouter = require('./category');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'CamTech General Knoweledge Assessment Test' });
-});
-
-router.use('/users',usersRouter);
-router.use('/questions',questionsRouter);
+router.get('/home-page', getHomepageController);
+router.use('/questions', questionsRouter);
+router.use('/category', categoryRouter);
 
 
 module.exports = router;
