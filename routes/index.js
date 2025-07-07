@@ -4,7 +4,7 @@ var router = express.Router();
 var authenticate = require('@controllers/auth/authenticate');
 
 var usersRouter = require('./users');
-var getHomepageController = require('../controllers/getHomePage');
+var getHomepageController = require('../controllers/getHome');
 var questionsRouter = require('./questions');
 var categoryRouter = require('./category');
 var profileRouter = require('./profile');
@@ -12,7 +12,7 @@ var authRouter = require('./auth');
 
 
 router.use('/auth', authRouter);
-router.get('/home-page', authenticate,  getHomepageController);
+router.get('/home', authenticate,  getHomepageController);
 
 router.use('/questions',authenticate ,  questionsRouter);
 router.use('/category', authenticate, categoryRouter);
