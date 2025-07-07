@@ -21,6 +21,7 @@ module.exports = async (req, res) => {
       }
     }
   });
+  console.log(" otpRecord ", otpRecord)
 
   if (!otpRecord) {
     return res.status(400).json({ message: 'Invalid or expired OTP' });
