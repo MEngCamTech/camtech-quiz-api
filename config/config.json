@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "quiz_app_user",
-    "password": "CamTech2025123!@#",
-    "database": "camtech_quiz",
-    "host": "camtech-dev.online",
+    "username": "camtech",
+    "password": "12345678",
+    "database": "quiz",
+    "host": "quiz-api.camtech-dev.online",
     "dialect": "mysql",
     "logging": false,
     "timezone": "+07:00"
@@ -11,7 +11,7 @@
   "staging": {
     "username": "quiz_app_user",
     "password": "CamTech2025123!@#",
-    "database": "camtech_quiz",
+    "database": "quiz",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "logging": false,

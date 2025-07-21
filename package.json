@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start:dev": "dotenv -e .env.dev -- nodemon ./bin/www",
+    "start:dev": "dotenv -e .env.dev -- node ./bin/www",
     "start:stg": "dotenv -e .env.stg -- node ./bin/www",
     "start:pro": "dotenv -e .env.pro -- node ./bin/www"
   },
@@ -20,7 +20,9 @@
     "module-alias": "^2.2.3",
     "morgan": "~1.9.1",
     "mysql2": "^3.14.1",
-    "sequelize": "^6.37.7"
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "dotenv-cli": "^8.0.0",

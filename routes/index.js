@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./../swagger');
+
+router.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 var authenticate = require('@controllers/auth/authenticate');
 
 var usersRouter = require('./users');
